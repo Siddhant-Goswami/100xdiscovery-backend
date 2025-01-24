@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, status
 from pydantic import BaseModel, EmailStr
 from app.config.database import supabase
 
-router = APIRouter(prefix="/auth", tags=["authentication"])
+router = APIRouter(tags=["authentication"])
 
 class UserAuth(BaseModel):
     email: EmailStr
