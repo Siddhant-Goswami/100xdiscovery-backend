@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+supabase
+groq
+pydantic
+python-jose[cryptography]
+python-multipart
+httpx 
