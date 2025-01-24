@@ -6,7 +6,7 @@ from app.services.search_service import SearchService
 from app.auth.auth import get_current_user
 from uuid import UUID
 
-router = APIRouter(prefix="/api")
+router = APIRouter(tags=["profiles"])
 search_service = SearchService()
 
 @router.post("/profiles", response_model=UserProfile)
