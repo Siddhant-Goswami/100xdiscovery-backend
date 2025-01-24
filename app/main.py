@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes import profiles
+from app.routes import profiles, auth
 
 app = FastAPI(title="100xEngineers Discovery Platform")
 
@@ -14,6 +14,7 @@ app.add_middleware(
 )
 
 # Include routers
+app.include_router(auth.router)
 app.include_router(profiles.router)
 
 @app.get("/")

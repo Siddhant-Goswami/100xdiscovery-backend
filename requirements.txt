@@ -3,7 +3,8 @@ uvicorn
 python-dotenv
 supabase
 groq
-pydantic
+pydantic[email]
 python-jose[cryptography]
 python-multipart
-httpx 
+httpx
+passlib[bcrypt] 
